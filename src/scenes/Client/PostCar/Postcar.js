@@ -124,7 +124,7 @@ export const Postcar = () => {
                                     <Option value="Option2">Option2</Option>
                                 </Select>
 
-                                <DatePicker picker="year" placeholder="AÑO" />
+                                <DatePicker picker="year" placeholder="MODELO" />
 
                             </div>
                             <div className="container-tab_container-photo" >
