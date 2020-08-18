@@ -5,7 +5,8 @@ import  {Store}  from '../../Client/Store/Store';
 import  {DetailCar}  from '../../Client/DetailCar/DetailCar';
 import { useDispatch, useSelector } from 'react-redux';
 import { auth } from '../../../services/Auth/AuthActions';
-import { user as userActions , user } from '../../../services/User/UserActions'
+import { user as userActions , user } from '../../../services/User/UserActions';
+
 
 
 export const Private = () => {
@@ -27,9 +28,10 @@ export const Private = () => {
     <Router>
       <Switch className="h-100">
         <Route exact path="/" component={Home} />
-        <Route exact path="/home-log" component={Home} />
-        <Route exact path="/store" component={Store} />
-        <Route exact path="/detail-car/:id" component={DetailCar} />
+        <Route  path="/home-log" component={Home} />
+        <Route  path="/store" component={Store} />
+        <Route  path="/detail-car/:id" component={DetailCar} />
+       
       </Switch>
     </Router>
   )
