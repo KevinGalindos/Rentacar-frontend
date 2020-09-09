@@ -12,11 +12,11 @@ export const Public = () => {
     <Router>
       <Switch className="h-100">
         <Route exact path="/" component={Home} />
-        <Route exact path="/home" component={Home} />
-        <Route exact path="/login" component={Auth} />
-        <Route exact path="/login-admin" component={Auth} />
+        <Route path="/home" component={Home} />
+        <Route path="/login" component={Auth} />
+        <Route path="/login-admin" component={Auth} />
         <Route path="/sing-up" component={SingUp} />
-        <Route path="/postcar" component={Postcar} />  {/* temporal para ver la vista sin login:*/}
+        <Route path="/detail-car/:id" component={DetailCar} />
       </Switch>
     </Router>
   )
