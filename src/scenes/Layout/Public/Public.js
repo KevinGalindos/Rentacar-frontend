@@ -4,6 +4,7 @@ import  {Auth}  from '../../Auth/AuthDealer';
 import { SingUp } from "../../Client/SingUp/SingUp";
 import { auth } from '../../../services/Auth/AuthActions';
 import { Home } from '../../../scenes/Client/Home/Home';
+import {Postcar} from '../../../scenes/Client/PostCar/Postcar'
 
 
 export const Public = () => {
