@@ -1,0 +1,43 @@
+.postcar{
+    
+    
+    
+       .container-tab{
+       max-width: 100%;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       margin-bottom: 50px;
+       
+       
+      
+
+       &_container-categories{
+
+            margin-bottom: 20px;
+            padding: 5px;
+
+            .type{
+                padding: 6px;
+            }
+
+            .brand{
+                padding: 6px;
+            }
+
+       }
+
+    }
+         
+        
+       
+    
+   
+
+   h1{
+       font-size: 20px;
+   }
+
+
+   
+}
