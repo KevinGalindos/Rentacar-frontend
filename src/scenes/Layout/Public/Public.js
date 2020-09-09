@@ -15,7 +15,7 @@ export const Public = () => {
         <Route exact path="/login" component={Auth} />
         <Route exact path="/login-admin" component={Auth} />
         <Route path="/sing-up" component={SingUp} />
-        
+        <Route path="/postcar" component={Postcar} />  {/* temporal para ver la vista sin login:*/}
       </Switch>
     </Router>
   )
