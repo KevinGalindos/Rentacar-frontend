@@ -5,6 +5,7 @@ import { SingUp } from "../../Client/SingUp/SingUp";
 import { auth } from '../../../services/Auth/AuthActions';
 import { Home } from '../../../scenes/Client/Home/Home';
 
+
 export const Public = () => {
   return (
     <Router>
@@ -14,6 +15,7 @@ export const Public = () => {
         <Route exact path="/login" component={Auth} />
         <Route exact path="/login-admin" component={Auth} />
         <Route path="/sing-up" component={SingUp} />
+        
       </Switch>
     </Router>
   )
