@@ -43,18 +43,18 @@ export const Home = ({ history }) => {
 	}
 
 	const dummyVehiculos = [
-		{ id: 1, name: "Kia Picanto", puestos: 5, automatico: "Aut", radio: "si", aire: "si", precio: "90.000", image: "url", },
-		{ id: 2, name: "ford", puestos: 5, automatico: "Aut", radio: "si", aire: "si", precio: "90.000", image: "url", },
-		{ id: 3, name: "Kia Rio", puestos: 5, automatico: "Aut", radio: "si", aire: "si", precio: "90.000", image: "url", },
-		{ id: 4, name: "hynday", puestos: 5, automatico: "Aut", radio: "si", aire: "si", precio: "90.000", image: "url", },
-		{ id: 5, name: "audi", puestos: 5, automatico: "Aut", radio: "si", aire: "si", precio: "90.000", image: "url", },
-		{ id: 6, name: "gipeta", puestos: 5, automatico: "Aut", radio: "si", aire: "si", precio: "90.000", image: "url", },
-		{ id: 7, name: "camioneta", puestos: 5, automatico: "Aut", radio: "si", aire: "si", precio: "90.000", image: "url", },
-		{ id: 8, name: "zorra", puestos: 5, automatico: "Aut", radio: "si", aire: "si", precio: "90.000", image: "url", },
-		{ id: 9, name: "aveo", puestos: 5, automatico: "Aut", radio: "si", aire: "si", precio: "90.000", image: "url", },
-		{ id: 10, name: "ferrary", puestos: 5, automatico: "Aut", radio: "si", aire: "si", precio: "90.000", image: "url", },
-		{ id: 11, name: "lambord", puestos: 5, automatico: "Aut", radio: "si", aire: "si", precio: "90.000", image: "url", },
-		{ id: 12, name: "carro", puestos: 5, automatico: "Aut", radio: "si", aire: "si", precio: "90.000", image: "url", }
+		{ id: 1, name: "Kia Picanto", puestos: 5, automatico: "Aut", radio: "si", aire: "si", precio: "80.000", image: "https://www.motor.com.co/files/article_multimedia/uploads/2019/06/19/5d0a6fd36ed3a.jpeg", },
+		{ id: 2, name: "Ford Fiesta", puestos: 5, automatico: "Aut", radio: "si", aire: "si", precio: "80.000", image: "https://www.conduciendo.com/wp-content/uploads/2017/11/FordNewFiesta-27112017-01.jpg", },
+		{ id: 3, name: "Kia Rio", puestos: 5, automatico: "Aut", radio: "si", aire: "si", precio: "100.000", image: "https://www.caetanomovilsur.es/wp-content/uploads/2019/04/portada333.jpg", },
+		{ id: 4, name: "Hyundai Tucson", puestos: 5, automatico: "Aut", radio: "si", aire: "si", precio: "120.000", image: "https://http2.mlstatic.com/D_NQ_NP_827984-MCO43257338038_082020-W.jpg", },
+		{ id: 5, name: "Audi Q5", puestos: 5, automatico: "Aut", radio: "si", aire: "si", precio: "240.000", image: "https://http2.mlstatic.com/audi-q5-ambition-19-D_NQ_NP_864670-MLA40809199844_022020-F.jpg", },
+		{ id: 6, name: "BMW X3", puestos: 5, automatico: "Aut", radio: "si", aire: "si", precio: "380.000", image: "https://http2.mlstatic.com/D_NQ_NP_884185-MCO43337647044_092020-W.jpg", },
+		{ id: 7, name: "Toyota TXL", puestos: 7, automatico: "Aut", radio: "si", aire: "si", precio: "450.000", image: "https://http2.mlstatic.com/D_NQ_NP_829417-MCO42846632730_072020-W.jpg", },
+		{ id: 8, name: "Mazda 3", puestos: 5, automatico: "Aut", radio: "si", aire: "si", precio: "200.000", image: "https://i.ytimg.com/vi/YtZghEKpCeA/maxresdefault.jpg", },
+		{ id: 9, name: "Mazda cx5", puestos: 5, automatico: "Aut", radio: "si", aire: "si", precio: "300.000", image: "https://2.bp.blogspot.com/-bQ3j2aNpvzc/XEUqZoI_JlI/AAAAAAAAK4o/7-lt4G31ZAgRERCt4ruG8Qm35gK8UUXiwCEwYBhgL/s1600/DSC_2444%2Bcomo%2Bobjeto%2Binteligente-1%2Bpeq.jpg", },
+		{ id: 10, name: "Kia Sportage", puestos: 5, automatico: "Aut", radio: "si", aire: "si", precio: "140.000", image: "https://http2.mlstatic.com/D_NQ_NP_669748-MCO43259540960_082020-W.jpg", },
+		{ id: 11, name: "Ford EDGE", puestos: 5, automatico: "Aut", radio: "si", aire: "si", precio: "250.000", image: "https://imgcdn.larepublica.co/i/1200/2019/04/25170631/FORD-EDGE_LR-web.jpg", },
+		{ id: 12, name: "Renault Stepway", puestos: 5, automatico: "Aut", radio: "si", aire: "si", precio: "80.000", image: "https://autosaldetalle.com.ar/wp-content/uploads/2019/11/Renault-Stepway-2020-1.jpg", }
 	]
 
 	const dummyMarcas = [
@@ -120,7 +120,7 @@ export const Home = ({ history }) => {
 												</div>
 											</div>
 											<div className="content-bottom">
-												<img className="picanto" src={Picanto} />
+												<img className="picanto" src={item.image} />
 											</div>
 											{authentication &&
 												<div className="cont-btn">

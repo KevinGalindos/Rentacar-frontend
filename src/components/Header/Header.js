@@ -4,7 +4,7 @@ import { Button, Menu, Input } from 'antd';
 import { useDispatch, useSelector } from 'react-redux';
 import { auth } from '../../services/Auth/AuthActions';
 import logo from "../../assets/image/LogoRentautos.png";
-import { LoginOutlined, CaretDownOutlined, CarOutlined, SettingOutlined, UserOutlined, ShoppingCartOutlined } from '@ant-design/icons';
+import { LoginOutlined, CaretDownOutlined, CarOutlined, SettingOutlined, UserOutlined, ShoppingCartOutlined, ShoppingOutlined } from '@ant-design/icons';
 
 const { SubMenu } = Menu;
 const { Search } = Input;
@@ -18,7 +18,7 @@ export const Header = ({ history }) => {
 	
 	const handleClick = e => {
 		setCurrent(e.key);
-		if(e.key == "3"){
+		if(e.key == "5"){
 			dispatch(auth.logout())
 			history.push("/")
 		}
@@ -56,9 +56,6 @@ export const Header = ({ history }) => {
 								Autos
 							</Link>
 							<Link to="/" className="link">
-								Rentar
-							</Link>
-							<Link to="/" className="link">
 								Ayuda/Contáctenos
 							</Link>
 							<Link to="/" className="link">
@@ -79,7 +76,9 @@ export const Header = ({ history }) => {
 											<Menu.ItemGroup title="">
 												<Menu.Item key="1"><UserOutlined />Perfil</Menu.Item>
 												<Menu.Item key="2"><SettingOutlined />Configuración</Menu.Item>
-												<Menu.Item key="3"><LoginOutlined />Cerrar sesión</Menu.Item>
+												<Menu.Item key="3"><CarOutlined />Mis Vehiculos</Menu.Item>
+												<Menu.Item key="4"><ShoppingOutlined />Rentas</Menu.Item>
+												<Menu.Item key="5"><LoginOutlined />Cerrar sesión</Menu.Item>
 											</Menu.ItemGroup>
 										</SubMenu>
 									</Menu>

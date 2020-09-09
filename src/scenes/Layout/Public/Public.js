@@ -4,16 +4,18 @@ import  {Auth}  from '../../Auth/AuthDealer';
 import { SingUp } from "../../Client/SingUp/SingUp";
 import { auth } from '../../../services/Auth/AuthActions';
 import { Home } from '../../../scenes/Client/Home/Home';
+import { DetailCar } from '../../../scenes/Client/DetailCar/DetailCar';
 
 export const Public = () => {
   return (
     <Router>
       <Switch className="h-100">
         <Route exact path="/" component={Home} />
-        <Route exact path="/home" component={Home} />
-        <Route exact path="/login" component={Auth} />
-        <Route exact path="/login-admin" component={Auth} />
+        <Route path="/home" component={Home} />
+        <Route path="/login" component={Auth} />
+        <Route path="/login-admin" component={Auth} />
         <Route path="/sing-up" component={SingUp} />
+        <Route path="/detail-car/:id" component={DetailCar} />
       </Switch>
     </Router>
   )
